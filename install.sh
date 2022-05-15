@@ -27,3 +27,9 @@ sudo apt-get install powerline fonts-powerline -y
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+
+# Install Jetbrains Mono font
+wget https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip
+sudo unzip JetBrainsMono-2.001.zip -d /usr/share/fonts
+sudo fc-cache -f -v
